@@ -1,12 +1,9 @@
-import React  from 'react'
-//uk-card-default
+import React from 'react'
 
-export default function PostItem({view}) {
-
+export default function PostItem() {
   return (
-   
-    <div className={(view === 'grid') ? "" : "uk-card uk-width-1-1"}>
-      <div className= "uk-card uk-card-default uk-margin-medium-bottom uk-card-hover">
+    <div>
+      <div className="uk-card uk-card-default uk-margin-medium-bottom">
         <div className="uk-card-header">
           <h3 className="uk-card-title uk-margin-remove-bottom uk-flex uk-flex-middle uk-flex-between">
             Title <a href="/" className="uk-icon-link" uk-icon="heart" />
@@ -25,7 +22,5 @@ export default function PostItem({view}) {
         </div>
       </div>
     </div>
-
   )
 }
-

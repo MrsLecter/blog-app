@@ -4,14 +4,13 @@ import SortFilter from './SortFilter/SortFilter'
 import LimitFilter from './LimitFilter/LimitFilter'
 import ViewToggle from './ViewToggle/ViewToggle'
 
-export default function FilterBar({updateValue, updateView}) {
-  
+export default function FilterBar() {
   return (
     <div className="uk-margin-medium-bottom uk-flex">
       <Search />
       <SortFilter />
-      <LimitFilter updateValue={updateValue} />
-      <ViewToggle updateView={updateView}/>
+      <LimitFilter />
+      <ViewToggle />
     </div>
   )
 }
